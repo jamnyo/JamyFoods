@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/yellow"
+    tools:context=".Profile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/regis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Regiester with us "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/regis"
+            android:layout_marginTop="0dp"
+            android:background="@color/cardview_light_background"
+            android:drawableRight="@drawable/person"
+            android:hint="FirstName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/sname"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fname"
+            android:background="@color/cardview_light_background"
+            android:drawableRight="@drawable/person"
+            android:hint="SecondName"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/pswd"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/location"
+            android:background="@color/cardview_light_background"
+            android:drawableRight="@drawable/lock"
+            android:hint="Password"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/cpswd"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/pswd"
+            android:background="@color/cardview_light_background"
+            android:drawableRight="@drawable/lock"
+            android:hint="Comfirm Password"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/email"
+            android:layout_below="@+id/pnumber"
+            android:id="@+id/email"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@color/cardview_light_background"
+            android:hint="Email"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gen"
+            android:layout_marginVertical="10dp"
+            android:text="Gender"
+            android:layout_below="@+id/sname"
+            android:background="#FFFF"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addres"
+            android:layout_marginVertical="10dp"
+            android:text="Select your address location"
+            android:layout_below="@+id/email"
+            android:background="#FFFF"
+            android:textSize="20dp"/>
+        <Spinner
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/addres"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:background="#CECCD1"
+            android:spinnerMode="dialog"
+            android:visibility="visible" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/group"
+            android:layout_below="@id/gen"
+            android:background="#FFFF"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:background="#CECCD1"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:background="#CECCD1"/>
+        </RadioGroup>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pnumber"
+            android:layout_height="40dp"
+            android:layout_below="@+id/group"
+            android:background="@color/cardview_light_background"
+            android:drawableRight="@drawable/phone"
+            android:inputType="textPhonetic"
+            android:layout_marginTop="5dp"
+            android:textIsSelectable="true"
+            android:hint="PhoneNumber"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub"
+            android:layout_below="@+id/cpswd"
+            android:text="Submit"
+            android:layout_marginTop="5dp"
+           />
+        <LinearLayout
+            android:layout_below="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/check"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Aready Have an account?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign"
+                android:layout_margin="10dp"
+                android:text="SignIn"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "912156090853",
+    "project_id": "jamyfoods-330a1",
+    "storage_bucket": "jamyfoods-330a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912156090853:android:37775ca009e4fbd2450f0c",
+        "android_client_info": {
+          "package_name": "com.example.jamyfoods"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912156090853-j22ijjlblgp8uq49un0m6h4t7imqefc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBttHXEkJs5X69Qtdv6TdM5vF_h8cC7k24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912156090853-j22ijjlblgp8uq49un0m6h4t7imqefc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JamyFoods</string>
+    <string name="welcome">Welcome to JamyFoods</string>
+    <string name="motto">Best food provider</string>
+    <string name="dont">Don\'t Have the account?</string>
+    <string-array name="location">
+        <item>Select location area</item>
+        <item>Taso Village</item>
+        <item>Kiswahili</item>
+        <item>Rugazi</item>
+        <item>Katete</item>
+        <item>Booma</item>
+        <item>Highstreet</item>
+    </string-array>
+</resources>
